@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ryanm/AndroidStudioProjects/StarsignImageViewerApp/app/src/main/res/layout/activity_display.xml" value="0.33" />
-        <entry key="..\:/Users/ryanm/AndroidStudioProjects/StarsignImageViewerApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ryanm/AndroidStudioProjects/StarsignImageViewerApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ryanm/AndroidStudioProjects/StarsignImageViewerApp/app/src/main/res/layout/recycler_element.xml" value="0.22" />
       </map>
     </option>
   </component>

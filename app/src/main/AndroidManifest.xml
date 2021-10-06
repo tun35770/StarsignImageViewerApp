@@ -11,7 +11,9 @@
         android:theme="@style/Theme.StarsignImageViewerApp">
         <activity
             android:name=".DisplayActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".SelectionActivity"
+            android:label="Details"/>
         <activity
             android:name=".SelectionActivity"
             android:exported="true">
