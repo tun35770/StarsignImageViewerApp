@@ -13,7 +13,7 @@
             android:name=".DisplayActivity"
             android:exported="true"
             android:parentActivityName=".SelectionActivity"
-            android:label="Details"/>
+            android:label="Display"/>
         <activity
             android:name=".SelectionActivity"
             android:exported="true">
