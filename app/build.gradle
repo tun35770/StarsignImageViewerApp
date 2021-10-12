@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 30
 
     defaultConfig {
         applicationId "edu.temple.starsignimageviewerapp"
-        minSdk 31
+        minSdk 30
         targetSdk 31
         versionCode 1
         versionName "1.0"

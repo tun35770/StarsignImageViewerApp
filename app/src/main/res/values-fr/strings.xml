@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Application de visualisation d\'images Starsign</string>
+    <string name="recycler_head_text">Cliquez sur une image ci-dessous pour voir</string>
+    <string name="display_label">Affichage</string>
+
+    <string-array
+        name="image_names">
+        <item>Verseau</item>
+        <item>Bélier</item>
+        <item>Cancer</item>
+        <item>Capricorne</item>
+        <item>Gémeaux</item>
+        <item>Leo</item>
+        <item>Libra</item>
+        <item>Balance</item>
+        <item>Sagittaire</item>
+        <item>Scorpion</item>
+        <item>Taureau</item>
+        <item>Vierge</item>
+    </string-array>
+
+</resources>

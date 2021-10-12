@@ -23,7 +23,7 @@
         android:id="@+id/headTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click an image below to view"
+        android:text="@string/recycler_head_text"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
