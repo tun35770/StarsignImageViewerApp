@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Starsign Image Viewer App</string>
+    <string name="recycler_head_text">Click an image below to view</string>
+    <string-array
+        name="image_names">
+        <item>Aquarius</item>
+        <item>Aries</item>
+        <item>Cancer</item>
+        <item>Capricorn</item>
+        <item>Gemini</item>
+        <item>Leo</item>
+        <item>Libra</item>
+        <item>Pisces</item>
+        <item>Sagittarius</item>
+        <item>Scorpio</item>
+        <item>Taurus</item>
+        <item>Virgo</item>
+    </string-array>
+
 </resources>

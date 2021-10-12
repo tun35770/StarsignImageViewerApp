@@ -11,19 +11,22 @@ class SelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //image_names array from resources
+        val imageNames = resources.getStringArray(R.array.image_names)
+
         //instantiating imageObjects array
-        val imageObjects = arrayOf(ImageObject("Aquarius", R.drawable.aquarius)
-            , ImageObject("Aries", R.drawable.aries)
-            , ImageObject("Cancer", R.drawable.cancer)
-            , ImageObject("Capricorn", R.drawable.capricorn)
-            , ImageObject("Gemini", R.drawable.gemini)
-            , ImageObject("Leo", R.drawable.leo)
-            , ImageObject("Libra", R.drawable.libra)
-            , ImageObject("Pisces", R.drawable.pisces)
-            , ImageObject("Sagittarius", R.drawable.sagittarius)
-            , ImageObject("Scorpio", R.drawable.scorpio)
-            , ImageObject("Taurus", R.drawable.taurus)
-            , ImageObject("Virgo", R.drawable.virgo)
+        val imageObjects = arrayOf(ImageObject(imageNames[0], R.drawable.aquarius)
+            , ImageObject(imageNames[1], R.drawable.aries)
+            , ImageObject(imageNames[2], R.drawable.cancer)
+            , ImageObject(imageNames[3], R.drawable.capricorn)
+            , ImageObject(imageNames[4], R.drawable.gemini)
+            , ImageObject(imageNames[5], R.drawable.leo)
+            , ImageObject(imageNames[6], R.drawable.libra)
+            , ImageObject(imageNames[7], R.drawable.pisces)
+            , ImageObject(imageNames[8], R.drawable.sagittarius)
+            , ImageObject(imageNames[9], R.drawable.scorpio)
+            , ImageObject(imageNames[10], R.drawable.taurus)
+            , ImageObject(imageNames[11], R.drawable.virgo)
         )
 
 
