@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Starsign Image Viewer App</string>
     <string name="recycler_head_text">Click an image below to view</string>
+    <string name="display_label">Display</string>
     <string-array
         name="image_names">
         <item>Aquarius</item>
