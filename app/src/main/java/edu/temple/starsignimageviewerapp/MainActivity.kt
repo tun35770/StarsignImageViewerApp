@@ -34,13 +34,15 @@ class MainActivity : AppCompatActivity() {
         val selectionFragment = SelectionFragment()
         val displayFragment = DisplayFragment()
 
+
+
         //add fragments to container views
         supportFragmentManager.beginTransaction().replace(R.id.SelectionFragment, selectionFragment).commit()
         supportFragmentManager.beginTransaction().replace(R.id.DisplayFragment, displayFragment).commit()
 
         //add recyclerview adapter
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.adapter = ImageAdapter(this, imageObjects)
+        val recyclerView = findViewById<RecyclerView>(R.id.selectionRecyclerView)
+        recyclerView.adapter = ImageAdapter(this, imageObjects, selectionFragment)
 
     }
 }

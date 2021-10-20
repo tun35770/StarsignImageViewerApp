@@ -8,12 +8,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 
-class ImageAdapter(val _context : Context, val _imageObjects : Array<ImageObject>): RecyclerView.Adapter<ImageAdapter.ViewHolder>(){
+class ImageAdapter(val _context : Context, val _imageObjects : Array<ImageObject>, val fragmentClass: Fragment): RecyclerView.Adapter<ImageAdapter.ViewHolder>(){
 
     val context = _context
     val imageObjects = _imageObjects
+    private var imageViewModel: ImageViewModel? = null
 
     //ViewHolder class
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -45,10 +48,9 @@ class ImageAdapter(val _context : Context, val _imageObjects : Array<ImageObject
 
         viewHolder.imageViewRecycler.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-                val intent = Intent(context, DisplayActivity::class.java)
-                intent.putExtra("resourceId", imageObjects[position].resourceId)
-                intent.putExtra("title", imageObjects[position].title)
-                context.startActivity(intent)
+                imageViewModel = ViewModelProvider(fragmentClass).get<ImageViewModel>(ImageViewModel::class.java)
+                imageViewModel!!.saveResourceId(imageObjects[position].resourceId)
+                imageViewModel!!.saveTitle(imageObjects[position].title)
             }
         })
 
