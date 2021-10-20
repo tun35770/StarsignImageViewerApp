@@ -2,8 +2,7 @@
     <string name="app_name">Starsign Image Viewer App</string>
     <string name="recycler_head_text">Click an image below to view</string>
     <string name="display_label">Display</string>
-    <string-array
-        name="image_names">
+    <string-array name="image_names">
         <item>Aquarius</item>
         <item>Aries</item>
         <item>Cancer</item>
@@ -17,5 +16,7 @@
         <item>Taurus</item>
         <item>Virgo</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
