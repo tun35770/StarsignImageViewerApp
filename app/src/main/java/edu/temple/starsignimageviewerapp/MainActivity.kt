@@ -29,6 +29,13 @@ class MainActivity : AppCompatActivity() {
             , ImageObject(imageNames[11], R.drawable.virgo)
         )
 
+        val selectionFragment = SelectionFragment()
+        val displayFragment = DisplayFragment()
+
+        val fragmentContainerView = findViewById<View>(R.id.SelectionFragment)
+        val displayContainerView = findViewById<View>(R.id.DisplayFragment)
+
+
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = ImageAdapter(this, imageObjects)
