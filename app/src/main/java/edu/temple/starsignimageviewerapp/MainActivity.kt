@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
@@ -29,14 +30,15 @@ class MainActivity : AppCompatActivity() {
             , ImageObject(imageNames[11], R.drawable.virgo)
         )
 
+        //instantiate fragments
         val selectionFragment = SelectionFragment()
         val displayFragment = DisplayFragment()
 
-        val fragmentContainerView = findViewById<View>(R.id.SelectionFragment)
-        val displayContainerView = findViewById<View>(R.id.DisplayFragment)
+        //add fragments to container views
+        supportFragmentManager.beginTransaction().replace(R.id.SelectionFragment, selectionFragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.DisplayFragment, displayFragment).commit()
 
-
-
+        //add recyclerview adapter
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = ImageAdapter(this, imageObjects)
 
