@@ -19,7 +19,7 @@ class SelectionFragment : Fragment() {
     lateinit var imageObjects: Array<ImageObject>
     lateinit var recyclerView: RecyclerView
     lateinit var layout: View
-    private var imageViewModel: ImageViewModel? = null
+    lateinit private var imageViewModel: ImageViewModel
 
     var startIndex : Int? = 0
 
@@ -34,8 +34,9 @@ class SelectionFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         layout = inflater.inflate(R.layout.fragment_selection, container, false)
-        recyclerView = layout.findViewById(R.id.recyclerView)
-
+        imageViewModel = ViewModelProvider(requireActivity()).get(ImageViewModel::class.java)
+        recyclerView = layout.findViewById(R.id.selectionRecyclerView)
+        recyclerView.adapter = ImageAdapter(requireContext(), imageObjects, imageViewModel)
         return layout;
     }
 
